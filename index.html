@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tythonic Service Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'tythonic-blue': '#007BFF',
+                        'bg-cream': '#FDFBF0',
+                        'custom-brown': '#A67C52',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 顶部导航：下滑出现，上划收回 */
+        #sticky-header {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateY(-100%);
+        }
+        #sticky-header.show {
+            transform: translateY(0);
+        }
+        .dashed-line {
+            border-top: 1px dashed #ccc;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <header id="sticky-header" class="fixed top-0 left-0 w-full bg-white shadow-md z-50 py-3 border-b-2 border-tythonic-blue">
+        <div class="text-center">
+            <p class="text-tythonic-blue text-[10px] uppercase tracking-wider">Welcome to</p>
+            <h1 class="text-tythonic-blue text-lg font-bold">Tythonic Service Center</h1>
+        </div>
+    </header>
+
+    <section class="relative w-full h-[320px] bg-cover bg-center flex items-center justify-center" style="background-image: url('01.png');">
+        <div class="bg-white/85 p-8 rounded-3xl shadow-xl max-w-lg mx-4 text-center">
+            <h2 class="text-3xl font-bold mb-4 tracking-tight">WELCOME</h2>
+            <p class="text-sm leading-relaxed text-gray-700">
+                We're confident the tutorials on this page will help you resolve your issue. 
+                If they don't do the trick, feel free to reach out to us right away—we'll stick with you until you get it sorted out successfully. 
+            </p>
+        </div>
+    </section>
+
+    <main class="max-w-4xl mx-auto px-5 py-10">
+
+        <section class="mb-12">
+            <h2 class="bg-yellow-400 font-bold text-lg inline-block px-2 mb-6">FAQ</h2>
+            
+            <div class="space-y-8">
+                <div>
+                    <h3 class="font-bold text-base mb-4">
+                        1. <a href="#" class="text-orange-600 underline">Did I get the right Smart Life App downloaded?</a> 
+                    </h3>
+                    <div class="flex flex-col md:flex-row items-center gap-6">
+                        <div class="flex items-center gap-3 bg-white p-3 rounded-xl flex-shrink-0">
+                            
+                            <img src="05.png" alt="App Icon" class="w-18 h-16 rounded-xl">
+                            <div>
+                                <p class="font-bold text-sm">SmartLife - Smart Living</p>
+                                <p class="text-[10px] text-gray-400">Smart Living</p>
+                                <p class="text-[10px] text-gray-400">★★★★★ 267K</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 rounded-xl">
+                            <img src="04.png" alt="Alert" class="h-20 rounded-xl">
+                                                    </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-base mb-2">2. <span class="underline cursor-pointer">Do I need to pay for a subscription?</span> </h3>
+                    <p class="text-sm leading-relaxed">
+                        <span class="text-red-600 font-bold">No fees</span> of any kind are required!<br>
+                        Subscriptions for the Smart Life App have absolutely nothing to do with the functionality of our extender — we recommend against purchasing any subscriptions. 
+                    </p>
+                </div>
+
+                <div class="dashed-line my-6"></div>
+
+                <div>
+                    <h3 class="font-bold text-base mb-2">3. <span class="text-cyan-600">"About Nest"--</span><a href="#" class="text-cyan-600 underline">Can't find "Skills & Games"?</a> </h3>
+                    <div class="text-sm space-y-2">
+                        <p>No worries—Alexa's interface has updated, and the path has changed a bit. Here's the now, exact path for the latest version: </p>
+                        <ul class="list-decimal list-inside font-medium pl-2">
+                            <li>Open the Alexa app &rarr; tap the menu icon (&equiv;) in the top-left corner;</li>
+                            <li>Select Explore Alexa+ Services;</li>
+                            <li>Tap Skills & Games;</li>
+                            <li>Search for Google Nest to enable the skill.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-base mb-2">4. <a href="#" class="text-cyan-600 underline">"Would not pair with doorbell"</a> <a href="#" class="text-cyan-600 underline">"Not easy installing"</a> </h3>
+                    <p class="text-sm leading-relaxed">
+                        Our investigation has confirmed that the issue is not an inability to pair the device, but rather deviations and errors during the setup process.<br>
+                        We are constantly optimizing the APP setup steps. If you encounter any difficulties during setup, please visit our support website for assistance immediately. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="bg-yellow-400 font-bold text-lg inline-block px-2 mb-8">Setup Guide</h2>
+            
+            <div class="space-y-6">
+                <div class="flex items-start gap-3">
+                    <span class="text-red-500 text-xl">•</span>
+                    <div>
+                        <p class="text-red-500 font-bold text-base">Full Up-to-Date High-Res Digital User Manual</p>
+                        <a href="https://www.tythonichome.com/_files/ugd/67ea63_84301b4cf65241e2a0d73ca77240eb6b.pdf" target="_blank" class="inline-block mt-2 px-4 py-1 border border-cyan-400 text-cyan-600 text-xs rounded hover:bg-cyan-50">Click to View &rsaquo;</a>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <span class="text-red-500 text-xl">•</span>
+                    <div>
+                        <p class="font-bold text-base">Setup Guide for <span class="text-red-500">Google Nest</span></p>
+                        <a href="https://www.tythonichome.com/_files/ugd/67ea63_f1f4e9bae27a4024b0785050ed680a22.pdf" target="_blank" class="inline-block mt-1 px-4 py-0.5 border border-orange-200 text-orange-800 text-[10px] rounded-full bg-orange-50">Video tutorial &rsaquo;</a>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <span class="text-red-500 text-xl">•</span>
+                    <div>
+                        <p class="font-bold text-base">Setup Guide for <span class="text-red-500">Ring</span></p>
+                        <a href="https://www.tythonichome.com/_files/ugd/67ea63_78af2f1e1e8648a083a1b058172cb0f9.pdf" target="_blank" class="inline-block mt-1 px-4 py-0.5 border border-orange-200 text-orange-800 text-[10px] rounded-full bg-orange-50">Video &rsaquo;</a>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <span class="text-red-500 text-xl">•</span>
+                    <div>
+                        <p class="font-bold text-base">Setup Guide for <span class="text-red-500">Blink</span></p>
+                        <a href="https://www.tythonichome.com/_files/ugd/67ea63_139081c237834f23a5ae08cc3a67783d.pdf" target="_blank" class="inline-block mt-1 px-4 py-0.5 border border-orange-200 text-orange-800 text-[10px] rounded-full bg-orange-50">Video &rsaquo;</a>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <span class="text-red-500 text-xl">•</span>
+                    <div>
+                        <p class="text-red-500 font-bold text-base">Video Setup Guide</p>
+                        <a href="https://www.youtube.com/@Tythonic/playlists" target="_blank" class="block mt-2">
+                            <img src="06.png" alt="YouTube" class="h-8">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="dashed-line mt-10"></div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-bg-cream rounded-3xl p-8 shadow-sm border border-yellow-100/50">
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl font-extrabold mb-4 leading-tight">24/7/365<br>Customer Support</h2>
+                <p class="text-xs text-gray-600">Any questions? Don't hesitate to contact us at once! We solve problems promptly and will send you a satisfactory response within 12 hours. </p>
+            </div>
+<form action="https://support-form-handler.xuyintao2.workers.dev/" method="POST">
+            <div class="bg-white/80 p-5 rounded-2xl shadow-sm border border-white">
+                <p class="text-sm font-bold mb-4">How can we help?</p>
+                <div class="space-y-3">
+                    <input type="text" placeholder="Your Order ID (Optional)" class="w-full bg-white border border-gray-200 rounded-lg p-2 text-xs outline-none focus:border-custom-brown">
+                    <input type="email" placeholder="Email *" class="w-full bg-white border border-gray-200 rounded-lg p-2 text-xs outline-none focus:border-custom-brown">
+                    <textarea placeholder="Tell us how we can help you..." rows="3" class="w-full bg-white border border-gray-200 rounded-lg p-2 text-xs outline-none focus:border-custom-brown"></textarea>
+<input type="hidden" name="_next" value="https://misduococo-support-center.xuyintao2.workers.dev/thanks.html">
+                    <button type="submit" class="w-full bg-custom-brown text-white py-2 rounded-lg font-bold text-xs hover:opacity-90 transition-opacity">Send</button>
+                </div>
+</form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-tythonic-blue w-full mt-10">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-stretch overflow-hidden">
+            <div class="md:w-1/2">
+                <img src="02.png" alt="Family" class="w-full h-full object-cover">
+            </div>
+            <div class="md:w-1/2 relative min-h-[200px]">
+                <img src="03.png" alt="Architecture" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-white/20 flex flex-col justify-center p-8 text-white">
+                    <p class="text-[14px] leading-tight mb-2">If you have any other questions, please contact us via email. </p>
+                    <h4 class="font-bold text-lg mb-1">Contact</h4>
+                    <p class="text-xs text-[14px]">By email: <span class="underline">tythonic@163.com</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let lastPos = 0;
+        const nav = document.getElementById('sticky-header');
+
+        window.addEventListener('scroll', () => {
+            const currentPos = window.pageYOffset || document.documentElement.scrollTop;
+
+            // 逻辑：下滑出现，上划隐藏
+            if (currentPos > lastPos && currentPos > 80) {
+                nav.classList.add('show');
+            } else {
+                nav.classList.remove('show');
+            }
+            lastPos = currentPos <= 0 ? 0 : currentPos;
+        });
+    </script>
+</body>
+</html>
